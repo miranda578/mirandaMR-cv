@@ -1,9 +1,40 @@
 @charset "utf-8";
 /*css document */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#cabecera{
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/imagen\ portada-11.svg);
+    background-color: white;
+    background-attachment: fixed;
+}
+.botonera {
+    width: 100%;
+    height:30px;
+    padding-top: 10px;
+    background-color: rgb(217, 224, 33);
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+.botonera a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 60px 90px;
+}
+.botonera a:hover {
+    color: rgb(146, 188, 67);
+}
 h1{
-    color: rgb(35, 47, 214);
-    font-size: 80px;
+    color: rgb(217, 224, 33);
+    font-size: 200px;
     font-family: "degular-display", sans-serif;
 font-weight: 200;
-font-style: normal;
+font-style: light;
 }
