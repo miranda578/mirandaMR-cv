@@ -4,13 +4,12 @@
     margin: 0%;
     padding: 0%;
 }
-#cabecera{
+#cabecera {
     width: 100%;
-    height: 1000px;
-    background-image: url(img/imagen\ portada-11.svg);
-    background-color: white;
-    background-attachment: fixed;
+    height: 2000;
+
 }
+
 .botonera {
     width: 100%;
     height:30px;
