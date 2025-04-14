@@ -6,72 +6,102 @@
 }
 
 #cabecera {
-    width: 100%;
-    height: 1900;
-    background-image: url(img/pueba\ mas\ grande-11.svg);
+    background-image: url("img/pueba\ mas\ grande-11.svg");
     height: 800px;
-    width: 1000;
+    width: 100%;
     background-attachment: fixed;
     background-color: white;
 }
-
-.botonera {
-    width: 100%;
-    height:40px;
-    padding-top: 20px;
-    padding-bottom: 19px;
-    padding-right: 8%;
-    background-color: rgb(217, 224, 33);
+nav{
+    background-color:rgb(217, 224, 33);
 }
 nav ul{
     list-style: none;
-    display:flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 8%;
-}
-nav ul li{
-    display: inline-block;
-    font-size: 25px
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 1% 8%;
+    font-family: "degular-display", sans-serif;
 }
 .botonera a{
     text-decoration: none;
-    color: antiquewhite;
+    color: aliceblue;
 }
 .botonera a:hover {
-    color: rgb(49, 17, 210);
-}
-section{
-    margin-bottom: 30px;
+    color: rgb(64, 33, 217);
 }
 
 h1{
     color: rgb(217, 224, 33);
-    font-size: 190px;
+    font-size: 170px;
     font-family: "degular-display", sans-serif;
-font-weight: 200;
-font-style: light;
-padding-left: 8%;
+    font-weight: 200;
+    font-style: light;
+    padding-top: 40px;
 }
+
 h2{
     color: rgb(217, 224, 33);
-    font-size: 93px;
+    font-size: 83px;
     font-family: "degular-display", sans-serif;
+}
+main section:first-of-type {
     padding-left: 8%;
 }
-h3,h4, p{
+main section:first-of-type p {
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-family: "degular-display", sans-serif;
+  }
+  
+h3{
+    margin-top: 1.2rem;
+    font-size: 30px;
+    font-family: "degular-display", sans-serif;
+    margin-top: 40px;
+    color:rgb(213, 220, 13);
+}
+.infocv{
+    display: flex;
+    justify-content: space-between;
     padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 60px;
+    padding-bottom: 330px;
+    font-family: "degular-display", sans-serif;
+}
+  
+.infocv> div {
+    width: 30%;
+}
+  
+.infocv h4 {
+    font-family: "degular-display", sans-serif;
+    font-size: 26px;
+    color: rgb(213, 220, 13);
+    margin-bottom: 12px;
+}
+  
+.infocv ul {
+    list-style-type: disc;
+    font-size: 16px;
+    list-style: none;
+
+}
+li{
+    padding: 5px 0px;
 }
 
 footer{
+    background-color:rgb(250, 251, 234);
+}
+footer ul{
     list-style: none;
-    display:flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2%;
-    padding-right: 8%;
-    padding-bottom: 2%;
-    background-color:rgb(240, 243, 140);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color:rgb(213, 220, 13);
+    padding: 1% 8%;
 }
