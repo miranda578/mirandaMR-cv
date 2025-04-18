@@ -7,13 +7,31 @@
 
 #cabecera {
     background-image: url("img/imageninicio.svg");
-    height: 800px;
+    height: calc(100vh - 65px);
     width: 100%;
     background-attachment: fixed;
-    background-color: white;
+    
+.imagenscroll {
+        margin-top: 65px; /* alto del nav fijo, para que no lo tape */
+        width: 100%;
+        overflow: hidden;
+    }
+      
+.imagenscroll img {
+        display: block;
+        width: 100%;
+        height: auto; /* mantiene la proporción original */
+        object-fit: contain; /* se asegura de mostrar la imagen entera */
+        position: sticky;
+        top: 65px; /* para que se quede "pegada" un poco al hacer scroll */
+      }
 }
 nav{
     background-color:rgb(217, 224, 33);
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav ul{
     list-style: none;
@@ -25,10 +43,11 @@ nav ul{
 }
 .botonera a{
     text-decoration: none;
-    color: aliceblue;
+    color:rgb(122, 105, 206);
+
 }
 .botonera a:hover {
-    color: rgb(64, 33, 217);
+    color:  aliceblue;
 }
 
 h1{
@@ -50,7 +69,6 @@ main section:first-of-type {
 }
 main section:first-of-type p {
     max-width: 500px;
-    margin-top: 20px;
     font-size: 18px;
     padding-bottom: 50px;
     font-family: "degular-display", sans-serif;
@@ -69,7 +87,7 @@ h3{
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 60px;
-    padding-bottom: 330px;
+    min-height: 80vh;
     font-family: "degular-display", sans-serif;
 }
   
@@ -85,7 +103,6 @@ h3{
 }
   
 .infocv ul {
-    list-style-type: disc;
     font-size: 16px;
     list-style: none;
 
@@ -93,15 +110,14 @@ h3{
 li{
     padding: 5px 0px;
 }
-
-footer{
-    background-color:rgb(250, 251, 234);
-}
-footer ul{
-    list-style: none;
+footer {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    color:rgb(213, 220, 13);
-    padding: 1% 8%;
+    padding: 20px 8%;
+    background-color:rgb(250, 252, 188);
+    color: rgb(122, 105, 206);
+    font-family:"degular-display", sans-serif;
+}
+footer ul {
+  list-style: none;
 }
