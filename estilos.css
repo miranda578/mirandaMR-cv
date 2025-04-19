@@ -4,28 +4,7 @@
     margin: 0%;
     padding: 0%;
 }
-
-#cabecera {
-    background-image: url("img/imageninicio.svg");
-    height: calc(100vh - 65px);
-    width: 100%;
-    background-attachment: fixed;
     
-.imagenscroll {
-        margin-top: 65px; /* alto del nav fijo, para que no lo tape */
-        width: 100%;
-        overflow: hidden;
-    }
-      
-.imagenscroll img {
-        display: block;
-        width: 100%;
-        height: auto; /* mantiene la proporción original */
-        object-fit: contain; /* se asegura de mostrar la imagen entera */
-        position: sticky;
-        top: 65px; /* para que se quede "pegada" un poco al hacer scroll */
-      }
-}
 nav{
     background-color:rgb(217, 224, 33);
     position: fixed;
@@ -49,14 +28,37 @@ nav ul{
 .botonera a:hover {
     color:  aliceblue;
 }
-
+  
+  main section:first-of-type h1 {
+    margin-top: 2px;
+  }
+  .imagenbaner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2294 / 606; /* proporción de tu imagen */
+    background-image: url(img/paracvA-14.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+.imagenpresentacion {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2294 / 1194; /* proporción de tu imagen */
+    background-image: url(img/banerinicio-13.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
 h1{
     color: rgb(217, 224, 33);
     font-size: 170px;
     font-family: "degular-display", sans-serif;
     font-weight: 200;
     font-style: light;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 h2{
@@ -86,13 +88,13 @@ h3{
     justify-content: space-between;
     padding-left: 8%;
     padding-right: 8%;
-    margin-top: 60px;
-    min-height: 80vh;
+    margin-top: 90px;
+    min-height: 70vh;
     font-family: "degular-display", sans-serif;
 }
   
 .infocv> div {
-    width: 30%;
+    width: 20%;
 }
   
 .infocv h4 {
@@ -113,11 +115,16 @@ li{
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 8%;
+    padding: 30px 8%;
     background-color:rgb(250, 252, 188);
     color: rgb(122, 105, 206);
     font-family:"degular-display", sans-serif;
 }
 footer ul {
   list-style: none;
+  font-size: 15px;
+}
+footer h5{
+    font-size: 15px;
+    padding-bottom: 5px;
 }
