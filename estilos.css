@@ -6,14 +6,11 @@
 }
 body {
     font-family: "degular-display", sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
     background-color: rgb(217, 224, 33);
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -73,7 +70,6 @@ h1{
     font-size: 210px;
     font-family: "degular-display", sans-serif;
     font-weight: 200;
-    padding-top: 80px
 }
 
 h2{
@@ -82,23 +78,25 @@ h2{
     font-family: "degular", sans-serif;
 font-weight: 200;
 font-style: italic;
-padding-bottom: 20px;
+padding-bottom: 45px;
+}
+.texto-presentacion {
+    padding-top: 80px;      /* Antes estaba en h1 */
+    padding-bottom: 40px;   /* Antes estaba en p */
+    max-width: 700px;
 }
 
-main section:first-of-type p {
-    max-width: 700px;
-    font-size: 18px;
+.texto-presentacion p {
     font-size: 19px;
-    list-style: none;
     font-family: "degular-text", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-bottom: 5%;
+    
+    /* Quita padding-bottom aquí */
 }
   
 h3{
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-size: 40px;
     color:rgb(213, 220, 13);
     font-family: "degular", sans-serif;
@@ -120,24 +118,6 @@ font-style: italic;
     width: 25%;
 }
   
-.infocv h4 {
-    font-family: "degular-text", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 32px;
-    color: #d5dc0d;
-    margin-bottom: 20px;
-
-}
-
-.infocv ul {
-    font-size: 19px;
-    list-style: none;
-    font-family: "degular-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-
-}
 li{
     padding: 8px 0px;
 }
