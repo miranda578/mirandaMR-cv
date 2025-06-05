@@ -17,7 +17,7 @@ nav {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Cambiado */
     align-items: center;
     font-size: 30px;
     padding: 1% 8%;
@@ -27,6 +27,11 @@ nav a {
     text-decoration: none;
     color: rgb(122, 105, 206);
     transition: color 0.2s;
+    margin-right: 80px; /* Espacio entre enlaces */
+}
+
+nav a:last-child {
+    margin-right: 0; /* Elimina el margen del último */
 }
 
 nav a:hover {
