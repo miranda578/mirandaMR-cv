@@ -4,29 +4,33 @@
     margin: 0%;
     padding: 0%;
 }
-    
-nav{
-    background-color:rgb(217, 224, 33);
-    position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+body {
+    font-family: "degular-display", sans-serif;
+    margin: 0;
+    padding: 0;
 }
-nav ul{
-    list-style: none;
+
+nav {
+    background-color: rgb(217, 224, 33);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 30px;
     padding: 1% 8%;
-    font-family: "degular-display", sans-serif;
 }
-.botonera a{
-    text-decoration: none;
-    color:rgb(122, 105, 206);
 
+nav a {
+    text-decoration: none;
+    color: rgb(122, 105, 206);
+    transition: color 0.2s;
 }
-.botonera a:hover {
-    color:  aliceblue;
+
+nav a:hover {
+    color: aliceblue;
 }
 .imagenbaner {
     width: 100%;
