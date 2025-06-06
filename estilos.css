@@ -141,13 +141,19 @@ footer h5{
 }
 
 .proyectos h2 {
+    padding-bottom: 8px;
     padding-left: 8%;
 }
 .proyectos h3 {
-    padding-left: 18%;
+    padding-left: 20%;
+    padding-bottom: 3%;
 }
 .tituloproyectos > div {
     padding-top: 50px;
     padding-left: 8%;
     padding-bottom: 7%;
+}
+
+.tituloproyectos h3 {
+    padding-left: 25%;
 }
