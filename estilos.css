@@ -109,8 +109,9 @@ font-style: italic;
 li{
     padding: 8px 0px;
 }
-
-
+.vidriera {
+    margin: 0 !important;
+}
 
 
 .vidriera img {
@@ -120,15 +121,44 @@ li{
     height: auto;
     padding-bottom: 4%;
 }
-.vidriera h3, .vidriera p {
-    padding-left: 0;
+.vidriera h2, .vidriera h3, .vidriera p {
     text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vidriera h2 {
+    padding-bottom: 1%;  /* Espacio debajo del h2 */
 }
 
+.vidriera h3 {
+    padding-bottom: 2%;  /* Espacio debajo del h3 */
+}
+
+.vidriera p {
+    padding-bottom: 1%;  /* Espacio debajo del párrafo, ajusta a gusto */
+    font-size: 22px;
+    width: 45%;
+    text-align: center;
+    line-height: 1.3;;
+}
+
+.vidriera p {
+    width: 40%;
+    margin: 0 auto 32px auto;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .vidriera p {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .vidriera p {
+    width: 95%;
+  }
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -157,11 +187,14 @@ footer h5{
 .tituloproyectos > div {
     padding-top: 50px;
     padding-left: 8%;
-    padding-bottom: 7%;
+    padding-bottom: 5%;
+}
+.tituloproyectos h1{
+  padding-bottom: 1%;
 }
 
 .tituloproyectos h3 {
-    padding-left: 25%;
+    padding-left: 26%;
 }
 
 
@@ -272,5 +305,12 @@ footer h5{
   .vidriera h3, .vidriera p {
     font-size: 1.1em;
     padding: 0 4vw;
+  }
+}
+@media (max-width: 600px) {
+  .vidriera h2,
+  .vidriera h3,
+  .vidriera p {
+    margin-bottom: 16px;
   }
 }
