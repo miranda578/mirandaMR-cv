@@ -5,8 +5,19 @@
     <title>CV - Miranda Martinez Ruvira</title>
     <link rel="stylesheet" href="https://use.typekit.net/trl2evk.css">
     <link rel="stylesheet" href="estilos.css" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="img/logo svg para web-14.svg">
   </head>
   <body>
+    <audio id="audio-contacto" src="img/you-hold-my-hand-124164.mp3" preload="auto"></audio>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('audio-contacto');
+        if (audio) {
+          audio.currentTime = 0;
+          audio.play().catch(function(){});
+        }
+      });
+    </script>
     <header>
       <nav>
         <a href="index.html">Inicio</a>
